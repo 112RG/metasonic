@@ -1,0 +1,28 @@
+[package]
+name = "metasonic"
+authors = ["Rylee George <ryleegeorge1@gmail.com>"]
+version = "0.1.0"
+edition = "2021"
+license = "MIT" 
+homepage = "https://github.com/112RG/metasonic"
+repository = "https://github.com/112RG/metasonic"
+keywords = ["flac", "audio", "parser", "metadata"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "metasonic"
+#crate-type = ["rlib"]
+path = "src/lib.rs"
+
+[[bin]]
+name = "metasonic"
+path = "src/main.rs"
+[dependencies]
+byteorder = "1.4.3"
+
+log = "0.4"
+
+# Eventually remove all these
+env_logger = "0.10.0"
+
+metaflac = "0.2"
+walkdir = "2.3.2"

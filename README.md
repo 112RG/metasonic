@@ -1,0 +1,1 @@
+# Flac library for simple and easy reading of flac file metadata
